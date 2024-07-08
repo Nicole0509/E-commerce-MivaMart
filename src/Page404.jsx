@@ -8,7 +8,7 @@ const Page404 = () => {
 
         <p className='text-textColor text-2xl'>
 
-        Page you are looking for was not found
+        Oops! The page you're looking for is not available at the moment.
         
         </p>
         <Link to='/' className='rounded-lg px-4 py-2 text-lg bg-textColor text-white hover:opacity-70'>Back to Home</Link>
