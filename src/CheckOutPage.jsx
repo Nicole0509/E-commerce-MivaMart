@@ -31,7 +31,7 @@ export default function() {
         <div className='OrderSummary'>
           <div className="cart-container">
             {cartItems.map((item, index) => (
-              <SingleCartProduct key={index} cart={item}  />
+              <SingleCartProduct key={index} cart={item} idx={index} />
             ))}
           </div>
           <DiscountList items={discountItems} />
@@ -100,7 +100,7 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment"/>
+              <ButtonComponent label="Confirm Payment" onClick={() =><ThankyouPage/>}/>
             </div>
           </div>
           
@@ -111,7 +111,6 @@ export default function() {
     </main>
   )
 }
-
 
 const SingleCartProduct = ({ cart, idx }) => {
   return (
