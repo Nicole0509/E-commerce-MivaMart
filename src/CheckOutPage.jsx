@@ -38,7 +38,7 @@ const discountItems = [
 
 export default function() {
   return (
-    <main>
+    <div>
       <Navbar/>
       <span className='checkout'>
         <h3 className='PeopleBuy'> <i class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
@@ -123,7 +123,7 @@ export default function() {
           
         </div>
       <Footer/>
-    </main>
+    </div>
   )
 }
 
