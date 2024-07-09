@@ -57,14 +57,14 @@
 
     .HeroSectionImageContainer{
         order: 1;
-        margin-bottom: 0.3rem;
+        padding: 2rem 0;
         align-items: center;
     }
 
     .HeroSectionBackground,
     .HeroSectionImageContainer img {
-        width: 10rem;
-        height: 4rem;
+        width: 15rem;
+        height: 7rem;
        
     }
 
