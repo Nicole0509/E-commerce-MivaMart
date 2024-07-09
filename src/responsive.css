@@ -63,5 +63,16 @@
         width: 100%;
     }
 
-    
+    .FooterContactSection {
+        width: 1fr;
+    }
+
+    .FooterMediaInfo {
+        width: 2fr;
+        gap: 0.5rem;
+    }
+
+    .FooterMediaInfo {
+        width: 1fr;
+    }
 }
