@@ -116,13 +116,12 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment" onClick={() =></ThankyouPage>}/>
+              <ButtonComponent label="Confirm Payment" onClick={() =><ThankyouPage/>}/>
             </div>
           </div>
           
           
         </div>
-      </div>
       <Footer/>
     </main>
   )
