@@ -17,7 +17,7 @@ export default function(){
         <i onClick={()=>navigate('/cart')} className="fa-solid fa-cart-shopping cursor-pointer"></i>({cart.length})
       </li>
       <li>
-        <i class="fa-regular fa-user"></i>
+        <i onClick={()=>navigate('/thanks')} class="fa-regular fa-user"></i>
       </li>
     </ul>
   )
