@@ -53,22 +53,22 @@ const SingleCartProduct = ({ cart, idx }) => {
   const [qty, setQty] = useState(cart.quantity)
   useEffect(() => { updateProductQuantityInCart(idx, qty) }, [qty])
   return (
-    <div className="w-full flex justify-between p-5 my-4 m-4">
-      <div className="flex justify-center items-center w-32 border-textColor py-2 px-5 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
-      <div className="flex flex-col">
+    <div className="w-full flex justify-between p-5 my-4 m-4  ListComponent">
+      <div className="ImageListComponent"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
+      <div className="flex flex-col ListDescriptionComponent">
         <span>{cart.category}</span>
         <span>{cart.pieces}</span>
         <span>{cart.colors}</span>
       </div>
-      <div className="flex items-center gap-1">
+      <div className="flex justify-between items-center gap-1 ListQuantity">
         <button onClick={() => qty > 1 && setQty(qty - 1)}>-</button>
         <span>{cart.quantity}</span>
         <button onClick={() => setQty(qty + 1)}>+</button>
       </div>
-      <div className="">
+      <div className="ListPrice">
         ${cart.price}
       </div>
-      <div className="">
+      <div className="ListPrice">
         ${cart.total}
 
         <i className="fa-solid fa-trash text-red-500 cursor-pointer" onClick={() => deleteProductFromCart(idx)} />
