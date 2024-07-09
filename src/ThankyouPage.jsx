@@ -9,6 +9,30 @@ import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
 
+const cartItems = [
+    {
+      imageUrl: './images/hero16.jpg',
+      category: 'Sensei ceramic',
+      quantity: 2,
+      price: 60.00,
+      total: 120.00
+    },
+
+    {
+      imageUrl: './images/hero2.jpg',
+      category: 'Sensei ceramic',
+      quantity: 1,
+      price: 15.00,
+      total: 15.00
+    },
+    {
+      imageUrl: './images/hero5.jpg',
+      category: 'Sensei ceramic',
+      quantity: 1,
+      price: 15.00,
+      total: 15.00
+    },
+  ];
 
 
 const discountItems = [
