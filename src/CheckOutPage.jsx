@@ -27,8 +27,7 @@ export default function() {
         <h3 className='PeopleBuy'> <i class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
       </span>
       <div className='checkOutDiv'>
-       <div className='OrderSummary'>
-         {cart && cart.map((c) => <CartProduct cart={c} />)}
+      <div className='OrderSummary'>
           <DiscountList items={discountItems} />
         </div>
         <div className='OrderForm'>
