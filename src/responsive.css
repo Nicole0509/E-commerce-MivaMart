@@ -29,7 +29,7 @@
     }
 
     .NavIcons {
-        margin-left: -2rem;
+        margin-left: -1rem;
         gap: 1rem;
         width: 9rem;
         font-size: 0.9rem;
@@ -84,20 +84,20 @@
     .FooterUpperContainer {
         display: flex;
         flex-direction: column;
-    }
-
-    .FooterContactSection {
-        width: 1fr;
+        margin: 1rem 0;
     }
 
     .FooterMediaInfo {
-        width: 2fr;
-        gap: 0.5rem;
-    }
-
-    .FooterMediaInfo {
-        width: 1fr;
-    }
+        order: 1;
+      }
+    
+      .FooterContactSection {
+        order: 2;
+      }
+    
+      .FooterPaymentMethod {
+        order: 3;
+      }
 
     .CartTitle {
         font-size: 0.8rem;
