@@ -623,7 +623,10 @@ button:disabled {
 
 /*Cart Item Styling*/
 .ListComponent{
+  width: 100%;
   padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ImageListComponent{
@@ -635,12 +638,18 @@ button:disabled {
 .ListDescriptionComponent{
   color: var(--mainred3);
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .ListQuantity{
   border: 1px solid var(--maincolor3);
+  width: 7rem;
   color: var(--mainred3);
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .ListPrice{
