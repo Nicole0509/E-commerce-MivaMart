@@ -8,7 +8,16 @@ import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
 
-
+  const cartItems = [
+    {
+      imageUrl: 'path/to/image.jpg',
+      category: 'Electronics',
+      quantity: 2,
+      price: 299.99,
+      total: 599.98
+    },
+    // Add more cart items here
+  ];
 
 const discountItems = [
   { text: 'Sub-total', price: 100 },
@@ -28,6 +37,11 @@ export default function() {
       </span>
       <div className='checkOutDiv'>
       <div className='OrderSummary'>
+        <div className="cart-container">
+            {cartItems.map((item, index) => (
+              <SingleCartProduct key={index} cart={item} idx={index} />
+            ))}
+          </div>
           <DiscountList items={discountItems} />
         </div>
         <div className='OrderForm'>
