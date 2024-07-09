@@ -11,13 +11,13 @@ export default function(){
          <i class="fa-solid fa-magnifying-glass"></i>
       </li>
       <li>
-        <i onClick={()=>navigate('/checkout')}  class="fa-solid fa-bag-shopping"></i>
+        <i onClick={()=>navigate('/')}  class="fa-solid fa-bag-shopping"></i>
       </li>
       <li>
         <i onClick={()=>navigate('/cart')} className="fa-solid fa-cart-shopping cursor-pointer"></i>({cart.length})
       </li>
       <li>
-        <i onClick={()=>navigate('/thanks')} class="fa-regular fa-user"></i>
+        <i onClick={()=>navigate('/user')} class="fa-regular fa-user"></i>
       </li>
     </ul>
   )

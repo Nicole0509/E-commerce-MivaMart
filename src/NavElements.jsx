@@ -14,7 +14,7 @@ export default function(){
         <Link to='/sellers'>Best sellers</Link>
       </li>
       <li>
-        <Link to='/checkout'>Catalog</Link>
+        <Link to='/catalog'>Catalog</Link>
       </li>
       <li>
         <Link to='/contact'>Contact us</Link>
