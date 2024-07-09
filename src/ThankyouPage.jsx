@@ -53,7 +53,7 @@ export default function() {
       </span>
       <div className='checkOutDiv'>
         <div className='OrderSummary'>
-          <div className="cart-container">
+         <div className="cart-container">
             {cartItems.map((item, index) => (
               <SingleCartProduct key={index} cart={item} idx={index} />
             ))}
