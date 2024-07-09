@@ -7,7 +7,8 @@ import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
-
+import { useCartContext } from './CartContext'
+import { useEffect, useState } from 'react'
 
 
 const discountItems = [
@@ -28,6 +29,7 @@ export default function() {
       </span>
       <div className='checkOutDiv'>
         <div className='OrderSummary'>
+          {cart && cart.map((c, idx) => <SingleCartProduct cart={c} idx={idx} />)}
           <DiscountList items={discountItems} />
         </div>
         <div className='OrderForm'>
@@ -105,3 +107,26 @@ export default function() {
     </main>
   )
 }
+
+const SingleCartProduct = ({ cart, idx }) => {
+  const { deleteProductFromCart, updateProductQuantityInCart } = useCartContext()
+  const [qty, setQty] = useState(cart.quantity)
+  useEffect(() => { updateProductQuantityInCart(idx, qty) }, [qty])
+
+  return (
+    <div className="w-full flex justify-between p-15 m-10 ">
+      <div className="flex justify-center items-center w-28 h-24 border-bg2 py-2 px-2 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
+      <div className="flex flex-col">
+        <span className ="ListDescriptionComponent">{cart.category}</span>
+        <span className ="ListDescriptionComponent">Qty{cart.quantity}</span>
+        
+      </div>
+      <div className="ListPrice">
+        <span>${cart.total}<br/>${cart.price}</span>
+
+      </div>
+
+    </div>
+  )
+}
+
