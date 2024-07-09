@@ -54,7 +54,7 @@ const SingleCartProduct = ({ cart, idx }) => {
   useEffect(() => { updateProductQuantityInCart(idx, qty) }, [qty])
   return (
     <div className="w-full flex justify-between p-25 m-4 ">
-      <div className="flex justify-center items-center w-32  border-bg2 py-2 px-2 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
+      <div className="flex justify-center items-center w-32  border-bg2 py-2 px-2 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-32 h-fit object-cover' src={cart.imageUrl} /></div></div>
       <div className="flex flex-col">
         <span className="ListPrice">${cart.price}</span>
         <span className ="ListDescriptionComponent">{cart.category}</span>
