@@ -1,6 +1,6 @@
 @media screen and (max-width:600px){
     .Navbar {
-        padding: 0.5rem;
+        padding: 1rem 1.5rem;
     }
 
     .LogoTitle {
@@ -29,7 +29,6 @@
     }
 
     .NavIcons {
-        margin-left: -1rem;
         gap: 1rem;
         width: 9rem;
         font-size: 0.9rem;
@@ -43,8 +42,12 @@
     }
 
     .header div{
-        width: 8rem;
+        width: 12rem;
         margin: 0 0.3rem;
+    }
+
+    .search-bar input {
+        width: 10rem;
     }
 
     .HeroSection {
@@ -64,7 +67,7 @@
     .HeroSectionBackground,
     .HeroSectionImageContainer img {
         width: 15rem;
-        height: 7rem;
+        height: 10rem;
        
     }
 
@@ -77,6 +80,8 @@
 
     .HeroSectionText h3 {
         font-size: 1.2rem;
+        width: 100%;
+        padding: 0 1rem;
     }
 
     .HeroSectionText p {
