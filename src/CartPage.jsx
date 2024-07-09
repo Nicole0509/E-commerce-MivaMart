@@ -13,6 +13,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 export default function () {
+  const navigate = useNavigate();
   const { cart } = useCartContext()
   const discountItems = [
     { text: 'Sub-total', price: cart.reduce((acc, c) => acc + (c.price * c.quantity), 0) },
