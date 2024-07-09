@@ -20,12 +20,12 @@
     .innerLogo {
         width: 1rem;
         height: 1rem;
-        top: .3rem;
+        top: .4rem;
         left: 0.5rem;
     }
 
     .LogoTitle h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .NavElements {
@@ -33,13 +33,15 @@
     }
 
     .NavIcons {
+        margin-left: -2rem;
         gap: 1rem;
         width: 9rem;
         font-size: 0.9rem;
     }
 
     .header {
-        padding: 1rem 5rem;
+        padding: 1rem;
+        font-size: 0.7rem;
     }
 
     .HeroSection {
