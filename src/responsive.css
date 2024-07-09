@@ -1,0 +1,30 @@
+@media screen and (max-width:600px){
+    .Navbar {
+        padding: 0.5rem;
+    }
+
+    .LogoTitle {
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .NavElements {
+        display: none;
+    }
+
+    .NavIcons {
+        gap: 1rem;
+        width: 9rem;
+        font-size: 0.9rem;
+    }
+
+    .header {
+        padding: 1rem 5rem;
+    }
+
+    .HeroSection {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

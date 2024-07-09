@@ -4,6 +4,7 @@ import Footer from './Footer'
 import HeroSection from './HeroSection'
 import FeaturedProducts from './FeaturedProducts'
 import Header2 from './Header2'
+import './responsive.css'
 
 export default function App() {
   return (
