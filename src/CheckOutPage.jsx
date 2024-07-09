@@ -7,9 +7,25 @@ import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
-import { useCartContext } from './CartContext'
-import { useEffect, useState } from 'react'
 
+  const cartItems = [
+    {
+      imageUrl: 'path/to/hero16.jpg',
+      category: 'Sensei ceramic',
+      quantity: 2,
+      price: 60.00,
+      total: 120.00
+    },
+
+    {
+      imageUrl: 'path/to/hero16.jpg',
+      category: 'Sensei ceramic',
+      quantity: 1,
+      price: 15.00,
+      total: 15.00
+    },
+    // Add more cart items here
+  ];
 
 const discountItems = [
   { text: 'Sub-total', price: 100 },
@@ -28,8 +44,12 @@ export default function() {
         <h3 className='PeopleBuy'> <i class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
       </span>
       <div className='checkOutDiv'>
-        <div className='OrderSummary'>
-          {cart && cart.map((c, idx) => <SingleCartProduct cart={c} idx={idx} />)}
+      <div className='OrderSummary'>
+        <div className="cart-container">
+            {cartItems.map((item, index) => (
+              <SingleCartProduct key={index} cart={item} idx={index} />
+            ))}
+          </div>
           <DiscountList items={discountItems} />
         </div>
         <div className='OrderForm'>
@@ -96,7 +116,7 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment"/>
+              <ButtonComponent label="Confirm Payment" onClick={() =></ThankyouPage>}/>
             </div>
           </div>
           
@@ -109,10 +129,6 @@ export default function() {
 }
 
 const SingleCartProduct = ({ cart, idx }) => {
-  const { deleteProductFromCart, updateProductQuantityInCart } = useCartContext()
-  const [qty, setQty] = useState(cart.quantity)
-  useEffect(() => { updateProductQuantityInCart(idx, qty) }, [qty])
-
   return (
     <div className="w-full flex justify-between p-15 m-10 ">
       <div className="flex justify-center items-center w-28 h-24 border-bg2 py-2 px-2 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
@@ -129,4 +145,3 @@ const SingleCartProduct = ({ cart, idx }) => {
     </div>
   )
 }
-
