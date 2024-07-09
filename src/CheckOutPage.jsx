@@ -26,7 +26,13 @@ import ButtonIcon from './ButtonIcon'
       price: 15.00,
       total: 15.00
     },
-    // Add more cart items here
+    {
+      imageUrl: './images/hero5.jpg',
+      category: 'Sensei ceramic',
+      quantity: 1,
+      price: 15.00,
+      total: 15.00
+    },
   ];
 
 
