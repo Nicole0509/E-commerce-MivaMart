@@ -1,4 +1,5 @@
 import './App.css'
+import './responsive.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { faCcPaypal }  from '@fortawesome/free-brands-svg-icons';
@@ -8,24 +9,7 @@ import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
 
-  const cartItems = [
-    {
-      imageUrl: 'path/to/hero16.jpg',
-      category: 'Sensei ceramic',
-      quantity: 2,
-      price: 60.00,
-      total: 120.00
-    },
 
-    {
-      imageUrl: 'path/to/hero16.jpg',
-      category: 'Sensei ceramic',
-      quantity: 1,
-      price: 15.00,
-      total: 15.00
-    },
-    // Add more cart items here
-  ];
 
 const discountItems = [
   { text: 'Sub-total', price: 100 },
@@ -38,18 +22,13 @@ const discountItems = [
 
 export default function() {
   return (
-    <div>
+    <main>
       <Navbar/>
       <span className='checkout'>
         <h3 className='PeopleBuy'> <i class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
       </span>
       <div className='checkOutDiv'>
-      <div className='OrderSummary'>
-        <div className="cart-container">
-            {cartItems.map((item, index) => (
-              <SingleCartProduct key={index} cart={item} idx={index} />
-            ))}
-          </div>
+        <div className='OrderSummary'>
           <DiscountList items={discountItems} />
         </div>
         <div className='OrderForm'>
@@ -116,30 +95,14 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment" onClick={() =><ThankyouPage/>}/>
+              <ButtonComponent label="Confirm Payment"/>
             </div>
           </div>
           
           
         </div>
+      </div>
       <Footer/>
-    </div>
+    </main>
   )
-}
-
-const SingleCartProduct = ({ cart , idx }) => {
-  
-    <div className="w-full flex justify-between p-5 m-2 ">
-      <div className="flex justify-center items-center w-28 h-24 border-bg2 py-2 px-2 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
-      <div className="flex flex-col">
-        <span className ="ListDescriptionComponent">{cart.category}</span>
-        <span className ="ListDescriptionComponent">Qty{cart.quantity}</span>
-        
-      </div>
-      <div className="ListPrice">
-        <span>${cart.total}<br/>${cart.price}</span>
-
-      </div>
-
-    </div>
 }
