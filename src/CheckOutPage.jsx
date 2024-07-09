@@ -39,7 +39,7 @@ export default function() {
       <div className='OrderSummary'>
         <div className="cart-container">
             {cartItems.map((item, index) => (
-              <SingleCartProduct key={index} cart={item} idx={index} />
+              <CartProduct key={index} cart={item}  />
             ))}
           </div>
           <DiscountList items={discountItems} />
