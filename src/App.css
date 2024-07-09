@@ -14,6 +14,13 @@
   --mainred2: #D75252;
   --mainred3: #8F3737;
   --mainred4: #BF4949;
+  --maingrey1:#BFC5C4;
+  --maingrey2: #E9F6F5;
+  --mainyellow1:#FFE27B;
+  --mainviolet1:#771F96;
+  --mainviolet2:#AE6FFF;
+  --mainviolet3: #746AED;
+  --mainbrown1:#CD651A;
   --bgcolor1: #FAFFFF;
   --bgcolor2: #F5F5F5;
 }
@@ -580,7 +587,7 @@ button:disabled {
 
 .ThankYou{
   width: 50%;
-  margin: 0rem 1.5rem 5rem 1.5rem;
+  margin: 0rem 3rem 5rem 5rem;
 }
 
 .ThankYou img{
@@ -622,43 +629,99 @@ button:disabled {
 }
 
 /*Cart Item Styling*/
-.ListComponent{
-  width: 100%;
-  padding: 1rem 4rem;
-  display: flex;
-  justify-content: space-between;
-}
 
-.ImageListComponent{
-  width: 15rem;
-  height: 10rem;
-  border-radius: 1rem;
-}
-
-.ListDescriptionComponent{
-  color: var(--mainred3);
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.ListQuantity{
-  border: 1px solid var(--maincolor3);
-  width: 7rem;
-  color: var(--mainred3);
-  font-size: 0.9rem;
+.cart-item {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
-.ListPrice{
-  font-weight: bold;
-  color: var(--maincolor1);
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
-.ListPrice i{
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-left: 1rem;
-  color: var(--mainred2);
 }
-  
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-item-quantity button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #20A39E;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*Recommandations */
+.recommendations {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.recommendations h2 {
+  margin-bottom: 1rem;
+}
+
+.recommendations-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.recommendation-item {
+  flex: 1;
+  text-align: center;
+}
+
+.recommendation-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/*Cart Page Styling*/
+
+.cart-page {
+  padding: 2rem;
+}
+
+.order-summary {
+  margin-top: 1rem;
+}
+
+.order-summary p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.checkout-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #20A39E;
+  color: #E9F6F5;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.checkout-button:hover {
+  background-color: #1d8b8a;
+}
