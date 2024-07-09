@@ -1,4 +1,5 @@
 import './App.css'
+import './responsive.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import FeaturedProducts from './FeaturedProducts'

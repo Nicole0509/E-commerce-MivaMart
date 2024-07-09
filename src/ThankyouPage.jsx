@@ -1,13 +1,9 @@
 import './App.css'
-// import './Responsive.css'
+import './responsive.css'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { faCcPaypal }  from '@fortawesome/free-brands-svg-icons';
-import { faApple }  from '@fortawesome/free-brands-svg-icons';
 import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
-import CheckBoxComponent from './CheckBoxComponent'
-import ButtonIcon from './ButtonIcon'
 
 const cartItems = [
     {
