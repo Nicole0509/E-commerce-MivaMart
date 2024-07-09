@@ -9,6 +9,7 @@ import CheckBoxComponent from './CheckBoxComponent'
 import Header2 from './Header2'
 import { useCartContext } from './CartContext'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function () {
@@ -38,7 +39,7 @@ export default function () {
       </div>
       <div className="Discount">
         <DiscountList items={discountItems} />
-        <ButtonComponent label="Check out" onClick={() => <CheckOutPage/>}/>
+        <ButtonComponent label="Check out" onClick={() => navigate('/checkout')} />
       </div>
 
       <h3 className='PeopleBuy'>People also buy</h3>
