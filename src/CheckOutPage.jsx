@@ -8,6 +8,7 @@ import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
+import { useNavigate } from 'react-router-dom'
 
 
   const cartItems = [
@@ -123,7 +124,7 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment"/>
+              <ButtonComponent label="Confirm Payment" onClick={()=>navigate('/thanks')} />
             </div>
           </div>
           
