@@ -36,7 +36,7 @@ const discountItems = [
 ];
 
 function GoToCheckout() {
-  window.location.href = './checkout';
+  window.location.href = '/thanks';
 }
 
 export default function() {
