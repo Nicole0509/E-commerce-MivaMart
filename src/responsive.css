@@ -27,4 +27,22 @@
         display: flex;
         flex-direction: column;
     }
+
+    .HeroSectionImageContainer {
+        width: 15rem;
+        height: 17rem;
+    }
+
+    .HeroSectionText {
+        width: 100%;
+    }
+
+    .HeroSectionText h3 {
+        font-size: 1.2rem;
+    }
+
+    .HeroSectionText p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
 }
