@@ -66,8 +66,8 @@
 
     .HeroSectionBackground,
     .HeroSectionImageContainer img {
-        width: 15rem;
-        height: 17rem;
+        width: 10rem;
+        height:8rem;
        
     }
 
@@ -75,7 +75,7 @@
     .HeroSectionText {
         order: 2;
         margin: 0;
-        padding: 0;
+        padding: 1.5rem 0;
     }
 
     .HeroSectionText h3 {
@@ -97,8 +97,8 @@
     }
 
     .ImageComponent {
-        width: 5rem;
-        height: 4rem;
+        width: 6rem;
+        height: 2.5rem;
     }
 
     .product-card {
