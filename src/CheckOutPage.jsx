@@ -7,7 +7,8 @@ import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
-
+import { useCartContext } from './CartContext'
+import { useEffect, useState } from 'react'
 
 
 const discountItems = [
@@ -109,6 +110,9 @@ export default function() {
 
 
 const SingleCartProduct = ({ cart, idx }) => {
+  const { deleteProductFromCart, updateProductQuantityInCart } = useCartContext()
+  const [qty, setQty] = useState(cart.quantity)
+  useEffect(() => { updateProductQuantityInCart(idx, qty) }, [qty])
 
   return (
     <div className="w-full flex justify-between p-15 m-10 ">
