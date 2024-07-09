@@ -8,30 +8,6 @@ import CheckBoxComponent from './CheckBoxComponent'
 import Header2 from './Header2'
 import { useCartContext } from './CartContext'
 import { useEffect, useState } from 'react'
-// import CartList from './CartList'
-
-
-
-
-
-// const sampleItems = [
-//   {
-//     imageUrl: 'https://via.placeholder.com/150',
-//     description: 'Sample Item 1',
-//     price: 10.00,
-//     quantity: 2,
-//     total: 20.00,
-//   },
-//   {
-//     imageUrl: 'https://via.placeholder.com/150',
-//     description: 'Sample Item 2',
-//     price: 15.00,
-//     quantity: 1,
-//     total: 15.00,
-//   },
-// ];
-
-
 
 
 export default function () {
@@ -77,7 +53,7 @@ const SingleCartProduct = ({ cart, idx }) => {
   const [qty, setQty] = useState(cart.quantity)
   useEffect(() => { updateProductQuantityInCart(idx, qty) }, [qty])
   return (
-    <div className="w-full flex justify-between p-5 my-4">
+    <div className="w-full flex justify-between p-5 my-4 m-4">
       <div className="flex justify-center items-center w-32 border-textColor py-2 px-5 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
       <div className="flex flex-col">
         <span>{cart.category}</span>
