@@ -9,14 +9,6 @@ import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
 
-import { Link, useHistory } from 'react-router-dom';
-
-function GoToCheckoutButton() {
-  const history = useHistory();
-
-  const GoToCheckout = () => {
-    history.push('/thanks');
-  };
 
   const cartItems = [
     {
@@ -44,10 +36,6 @@ const discountItems = [
   { text: 'Total amount', price: 50},
   // Add more items as needed
 ];
-
-function GoToCheckout() {
-  window.location.href = '/thanks';
-}
 
 export default function() {
   return (
@@ -129,7 +117,7 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment" onClick={GoToCheckout}/>
+              <ButtonComponent label="Confirm Payment"/>
             </div>
           </div>
           
