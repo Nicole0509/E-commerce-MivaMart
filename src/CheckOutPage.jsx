@@ -50,7 +50,7 @@ export default function() {
     <main>
       <Navbar/>
       <span className='checkout'>
-        <h3 className='PeopleBuy'> <i class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
+        <h3 className='PeopleBuy'> <i onClick={() => navigate('/cart')} class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
       </span>
       <div className='checkOutDiv'>
         <div className='OrderSummary'>

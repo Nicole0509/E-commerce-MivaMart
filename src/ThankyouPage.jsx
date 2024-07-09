@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
+import { useNavigate } from 'react-router-dom'
 
 const cartItems = [
     {
@@ -41,11 +42,12 @@ const discountItems = [
 
 
 export default function() {
+  const navigate = useNavigate();
   return (
     <main>
       <Navbar/>
       <span className='checkout'>
-        <h3 className='PeopleBuy'> <i class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
+        <h3 className='PeopleBuy'> <i onClick={() => navigate('/checkout')} class="fa-solid fa-arrow-left"></i>Checkout Page</h3>
       </span>
       <div className='checkOutDiv'>
         <div className='OrderSummary'>
