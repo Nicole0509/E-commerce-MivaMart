@@ -67,7 +67,7 @@
     .HeroSectionBackground,
     .HeroSectionImageContainer img {
         width: 15rem;
-        height: 10rem;
+        height: 17rem;
        
     }
 
@@ -75,7 +75,7 @@
     .HeroSectionText {
         order: 2;
         margin: 0;
-        padding: 0.5rem;
+        padding: 0;
     }
 
     .HeroSectionText h3 {
@@ -92,13 +92,22 @@
     .featured-products {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem;
 
     }
 
+    .ImageComponent {
+        width: 5rem;
+        height: 4rem;
+    }
+
     .product-card {
-        width: 40%;
+        width: 7rem;
         height: fit-content;
+    }
+
+    .productInfoContainer {
+        font-size: 85%;
     }
 
     .FooterUpperContainer {
