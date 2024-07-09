@@ -10,7 +10,7 @@ import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
   const cartItems = [
     {
-      imageUrl: 'path/to/hero16.jpg',
+      imageUrl: './images/hero16.jpg',
       category: 'Sensei ceramic',
       quantity: 2,
       price: 60.00,
@@ -18,7 +18,7 @@ import ButtonIcon from './ButtonIcon'
     },
 
     {
-      imageUrl: 'path/to/hero16.jpg',
+      imageUrl: './images/hero2.jpg',
       category: 'Sensei ceramic',
       quantity: 1,
       price: 15.00,
@@ -35,7 +35,9 @@ const discountItems = [
   // Add more items as needed
 ];
 
-
+function GoToCheckout() {
+  window.location.href = './checkout';
+}
 
 export default function() {
   return (
@@ -117,7 +119,7 @@ export default function() {
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
             <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment" onClick={() =><ThankyouPage/>}/>
+              <ButtonComponent label="Confirm Payment" onclick="GoToCheckout()"/>
             </div>
           </div>
           
