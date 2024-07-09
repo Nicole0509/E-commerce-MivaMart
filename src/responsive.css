@@ -1,11 +1,21 @@
 @media screen and (max-width:600px){
+    body{
+        width: 100%;
+        padding: 1rem;
+    }
     .Navbar {
         padding: 0.5rem;
     }
 
     .LogoTitle {
-        width: 10rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .outerLogo,
+    .innerLogo {
+        width: 0.5rem;
+        height: 0.5rem;
     }
 
     .NavElements {
