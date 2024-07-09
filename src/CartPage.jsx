@@ -37,7 +37,7 @@ export default function () {
       </div>
       <div className="Discount">
         <DiscountList items={discountItems} />
-        <ButtonComponent label="Check out" onClick={() => <Link to='/checkout'></Link>}/>
+        <ButtonComponent label="Check out" onClick={() => <CheckOutPage/>}/>
       </div>
 
       <h3 className='PeopleBuy'>People also buy</h3>
