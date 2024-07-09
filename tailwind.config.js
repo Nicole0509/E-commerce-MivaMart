@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: '#187A77',
         bg1: '#FAFFFF',
+        bg2: '#BAE2E1',
         textColor: '#0E4947'
       }
     },
