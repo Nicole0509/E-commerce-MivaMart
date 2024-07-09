@@ -55,12 +55,20 @@
         flex-direction: column;
     }
 
-    .HeroSectionImageContainer {
-        width: 15rem;
-        height: 17rem;
+    .HeroSectionImageContainer{
+        order: 1;
+        width: 10rem;
+        height: 7rem;
     }
 
+    .HeroSectionBackground {
+        width: 10rem;
+        height: 7rem;
+    }
+
+
     .HeroSectionText {
+        order: 2;
         margin: 0;
         padding: 0.5rem;
     }
