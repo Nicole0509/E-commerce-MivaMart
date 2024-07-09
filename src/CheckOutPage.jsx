@@ -8,7 +8,24 @@ import DiscountList from './DiscountList'
 import ButtonComponent from './ButtonComponent'
 import CheckBoxComponent from './CheckBoxComponent'
 import ButtonIcon from './ButtonIcon'
+  const cartItems = [
+    {
+      imageUrl: 'path/to/hero16.jpg',
+      category: 'Sensei ceramic',
+      quantity: 2,
+      price: 60.00,
+      total: 120.00
+    },
 
+    {
+      imageUrl: 'path/to/hero16.jpg',
+      category: 'Sensei ceramic',
+      quantity: 1,
+      price: 15.00,
+      total: 15.00
+    },
+    // Add more cart items here
+  ];
 
 
 const discountItems = [
