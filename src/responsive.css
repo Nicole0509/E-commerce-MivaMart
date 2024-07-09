@@ -97,13 +97,14 @@
     }
 
     .ImageComponent {
-        width: 6rem;
+        width: 8rem;
         height: 2.5rem;
     }
 
     .product-card {
-        width: 7rem;
-        height: fit-content;
+        width: 10rem;
+        height: 8rem;
+        margin-bottom: 0.3rem;
     }
 
     .productInfoContainer {
