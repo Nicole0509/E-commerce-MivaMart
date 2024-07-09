@@ -38,26 +38,39 @@
     .header {
         padding: 1rem;
         font-size: 0.7rem;
+        width: 100%;
+        margin-right: 1rem;
     }
 
     .header div{
-        width: 3rem;
+        width: 8rem;
         margin: 0 0.3rem;
     }
 
     .HeroSection {
         width:100%;
+        margin: 0;
+        padding: 0.2rem;
         display: flex;
         flex-direction: column;
     }
 
-    .HeroSectionImageContainer {
-        width: 15rem;
-        height: 17rem;
+    .HeroSectionImageContainer{
+        order: 1;
+        width: 10rem;
+        height: 7rem;
     }
 
+    .HeroSectionBackground {
+        width: 10rem;
+        height: 7rem;
+    }
+
+
     .HeroSectionText {
-        width: 100%;
+        order: 2;
+        margin: 0;
+        padding: 0.5rem;
     }
 
     .HeroSectionText h3 {
@@ -134,7 +147,8 @@
 
     .FooterPaymentMethod {
         width: 10rem;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        text-align: center;
     }
 
     .CartTitle {
