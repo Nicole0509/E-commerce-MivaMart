@@ -12,10 +12,20 @@
         height: 5rem;
     }
 
-    .outerLogo,
+    .outerLogo {
+        width: 1rem;
+        height: 1rem;
+    }
+
     .innerLogo {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1rem;
+        height: 1rem;
+        top: .3rem;
+        left: 0.5rem;
+    }
+
+    .LogoTitle h1 {
+        font-size: 1rem;
     }
 
     .NavElements {
