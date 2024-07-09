@@ -39,7 +39,7 @@ export default function() {
       <div className='OrderSummary'>
         <div className="cart-container">
             {cartItems.map((item, index) => (
-              <CartProduct key={index} cart={item}  />
+              <SingleCartProduct key={index} cart={item} idx={index} />
             ))}
           </div>
           <DiscountList items={discountItems} />
@@ -120,7 +120,7 @@ export default function() {
   )
 }
 
-const CartProduct = ({ cart }) => {
+const SingleCartProduct = ({ cart, idx }) => {
   return (
     <div className="w-full flex justify-between p-15 m-10 ">
       <div className="flex justify-center items-center w-28 h-24 border-bg2 py-2 px-2 border-2 rounded-lg"> <div className="flex rounded-lg justify-center items-center overflow-hidden"><img className='w-24 h-fit object-cover' src={cart.imageUrl} /></div></div>
