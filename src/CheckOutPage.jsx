@@ -12,7 +12,7 @@ import ButtonIcon from './ButtonIcon'
 
 const discountItems = [
   { text: 'Sub-total', price: 100 },
-  { text: 'Discount', price: 200},
+  { text: 'Discount', price: 50},
   { text: 'Total amount', price: 50},
   // Add more items as needed
 ];
