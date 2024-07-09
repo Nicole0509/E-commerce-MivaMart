@@ -123,8 +123,8 @@ export default function() {
             <div className='FormCheckbox'>
               <CheckBoxComponent label="I agree to the Privacy policy and Terms and Conditons"/>
             </div>
-            <div className='ConfirmButton'>
-              <ButtonComponent label="Confirm Payment" onClick={()=>navigate('/thanks')} />
+            <div className='ConfirmButton' onClick={()=>navigate('/thanks')}>
+              <ButtonComponent label="Confirm Payment"  />
             </div>
           </div>
           
